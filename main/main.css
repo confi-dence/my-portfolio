@@ -9,8 +9,6 @@ background: linear-gradient(90deg, rgba(0, 0, 0, 0.544),transparent);
   #menu, #cross-1, #cross-2{
     display: inline-block; 
     transition: transform 0.5s ease;
-    /* transform-style: preserve-3d; */
-
     transform-origin: center;
   }
   #confy-image{
