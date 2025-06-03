@@ -47,15 +47,19 @@ background: linear-gradient(90deg, rgba(0, 0, 0, 0.544),transparent);
 
 }
 @keyframes slideDown{
-   to{
+  to{
        height: 100%;
-   }
-}
+      }
+    }
+
 #cross-1{
   display: none;
 }
 .reduceOpacity{
   opacity: 0.3;
+}
+#AboutMe:hover{
+  color: rgb(204, 204, 10);
 }
   @media screen and (max-width: 1100px) {
    .Confidence{
@@ -73,7 +77,7 @@ background: linear-gradient(90deg, rgba(0, 0, 0, 0.544),transparent);
     .web{
      text-align: center;
      }
-     ul{
+     #faceLinked{
       justify-content: center;
      }
 
@@ -99,6 +103,9 @@ background: linear-gradient(90deg, rgba(0, 0, 0, 0.544),transparent);
  #Right{
   justify-content: end;
  
+ }
+ #UlAboutMe{
+   margin-top: 5vh;
  }
  #Right > div{
   justify-content: space-between;
