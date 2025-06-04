@@ -19,6 +19,8 @@ function menuButton() {
     upanddown.classList.add('atTab')
     Right.classList.add('slideDownRight')
     content.classList.add('reduceOpacity')
+    left.classList.remove('slideleftOut');
+    Right.classList.remove('slideDownOut');
     // void menu.offsetWidth; 
     setTimeout(()=>{
       menu.style.display = 'none'
@@ -47,19 +49,20 @@ menu.addEventListener('click', menuButton);
 cross.forEach(search => {
   search.addEventListener('click', function () {
     if (menu.src.includes('menuB.png')) {
+      left.classList.add('slideleftOut');
+      Right.classList.add('slideDownOut');
       search.classList.add('rotateBack');
       search.classList.remove('rotate');
       content.classList.remove('reduceOpacity')
-   
       setTimeout(()=>{
         menu.style.display = 'flex'
         upanddown.style.display = 'none'
         search.classList.remove('rotateBack');
         search.classList.add('rotate');
-          menu.classList.add('rotateBack');
-      menu.classList.remove('rotate');
-      isMenuOpen = false;
-      },500)
+        menu.classList.add('rotateBack');
+        menu.classList.remove('rotate');
+        isMenuOpen = false;
+      },1000)
     }
   })
 })

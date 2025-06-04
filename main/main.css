@@ -22,35 +22,82 @@ background: linear-gradient(90deg, rgba(0, 0, 0, 0.544),transparent);
   }
   .slideDownRight{ 
     position: absolute;
+  overflow: hidden;
+
    left: 0;
    right: 0;
    width: 50%;
    height:0;
    background-color: rgba(37, 34, 34, 0.752);
-   animation: slideDown 1s ease-out forwards;
+   animation: slideDownRight 1s ease-out forwards;
    z-index: 10;
 }
-@keyframes slideDown{
+@keyframes slideDownRight{
    to{
        height: 100%;
    }
 }
+.slideDownOut{
+  overflow: hidden;
+
+  position: absolute;
+  left: 0;
+  width: 50%;
+  height: 0;
+  animation: slideDownOut 1s ease-out forwards;
+  z-index: 10;
+  background-color: rgba(47, 44, 44, 0.763);
+}
+@keyframes slideDownOut{
+  from{
+      height: 100%;
+  }
+  to{
+    height: 0;
+  }
+ }
  .slideleftUp{ 
     position: absolute;
+  overflow: hidden;
+
    bottom:  0;
    right: 0;
    width: 50%;
    height:0;
-   animation: slideDown 1s ease-out forwards;
+   animation: slideleftUp 1s ease-out forwards;
    z-index: 10;
    background-color: rgba(0, 0, 0, 0.712);
 
 }
-@keyframes slideDown{
+@keyframes slideleftUp{
   to{
        height: 100%;
       }
     }
+
+    
+.slideleftOut { 
+  overflow: hidden;
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%; 
+  height: 0;
+  animation: slideleftOut 1s ease-out forwards;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.739);
+}
+
+@keyframes slideleftOut {
+  from {
+    height: 100%; 
+  }
+  to{
+    height: 0;
+  }
+
+}
 
 #cross-1{
   display: none;
@@ -127,36 +174,84 @@ background: linear-gradient(90deg, rgba(0, 0, 0, 0.544),transparent);
   flex-direction: column;
 }
 .slideDownRight{ 
+  overflow: hidden;
+
 position: absolute;
  left: 0;
  width: 0;
  height:25%;
- animation: slideDown 1s ease-out forwards;
+ animation: slideDownRight 1s ease-out forwards;
  z-index: 10;
  background-color: rgba(47, 44, 44, 0.763);
 }
-@keyframes slideDown{
+@keyframes slideDownRight{
  to{
      width: 100%;
  }
 }
-.slideleftUp{ 
+.slideDownOut{
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 25%;
+  animation: slideDownOut 1s ease-out forwards;
+  z-index: 10;
+  background-color: rgba(47, 44, 44, 0.763);
+}
+@keyframes slideDownOut{
+  from{
+      width: 100%;
+  }
+  to{
+    width: 0;
+  }
+ }
+
+/* Original: Slides in from right to left */
+.slideleftUp { 
+  overflow: hidden;
+
+  position: absolute;
+  bottom: 0;
+  right: 0; 
+  width: 0;
+  height: 75%;
+  animation: slideleftUp 1s ease-out forwards;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.739);
+}
+
+@keyframes slideleftUp {
+  to {
+    width: 100%; 
+  }
+}
+
+
+.slideleftOut { 
+  overflow: hidden;
+
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 0;
-  background-color: transparent;
- height:75%;
- animation: slideDown 1s ease-out forwards;
- z-index: 10;
- background-color: rgba(0, 0, 0, 0.739);
+  width: 100%; 
+  height: 75%;
+  animation: slideleftOut 1s ease-out forwards;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.739);
+}
+
+@keyframes slideleftOut {
+  from {
+    width: 100%; 
+  }
+  to{
+    width: 0;
+  }
 
 }
-@keyframes slideDown{
- to{
-  width: 100%;
- }
-}
+
 #cross-1{
   display: block;
 }
