@@ -28,7 +28,7 @@ background: linear-gradient(90deg, rgba(0, 0, 0, 0.544),transparent);
    right: 0;
    width: 50%;
    height:0;
-   background-color: rgba(37, 34, 34, 0.752);
+   background-color: rgba(47, 44, 44, 0.476);
    animation: slideDownRight 1s ease-out forwards;
    z-index: 10;
 }
@@ -46,7 +46,7 @@ background: linear-gradient(90deg, rgba(0, 0, 0, 0.544),transparent);
   height: 0;
   animation: slideDownOut 1s ease-out forwards;
   z-index: 10;
-  background-color: rgba(47, 44, 44, 0.763);
+  background-color: rgba(47, 44, 44, 0.476);
 }
 @keyframes slideDownOut{
   from{
@@ -66,7 +66,7 @@ background: linear-gradient(90deg, rgba(0, 0, 0, 0.544),transparent);
    height:0;
    animation: slideleftUp 1s ease-out forwards;
    z-index: 10;
-   background-color: rgba(0, 0, 0, 0.712);
+   background-color:rgba(0, 0, 0, 0.485);
 
 }
 @keyframes slideleftUp{
@@ -86,7 +86,7 @@ background: linear-gradient(90deg, rgba(0, 0, 0, 0.544),transparent);
   height: 0;
   animation: slideleftOut 1s ease-out forwards;
   z-index: 10;
-  background-color: rgba(0, 0, 0, 0.739);
+  background-color: rgba(0, 0, 0, 0.485);
 }
 
 @keyframes slideleftOut {
@@ -182,7 +182,7 @@ position: absolute;
  height:25%;
  animation: slideDownRight 1s ease-out forwards;
  z-index: 10;
- background-color: rgba(47, 44, 44, 0.763);
+ background-color: rgba(47, 44, 44, 0.476);
 }
 @keyframes slideDownRight{
  to{
@@ -197,7 +197,7 @@ position: absolute;
   height: 25%;
   animation: slideDownOut 1s ease-out forwards;
   z-index: 10;
-  background-color: rgba(47, 44, 44, 0.763);
+  background-color: rgba(47, 44, 44, 0.476);
 }
 @keyframes slideDownOut{
   from{
@@ -219,7 +219,7 @@ position: absolute;
   height: 75%;
   animation: slideleftUp 1s ease-out forwards;
   z-index: 10;
-  background-color: rgba(0, 0, 0, 0.739);
+  background-color: rgba(0, 0, 0, 0.485);
 }
 
 @keyframes slideleftUp {
@@ -239,7 +239,7 @@ position: absolute;
   height: 75%;
   animation: slideleftOut 1s ease-out forwards;
   z-index: 10;
-  background-color: rgba(0, 0, 0, 0.739);
+  background-color: rgba(0, 0, 0, 0.485);
 }
 
 @keyframes slideleftOut {
@@ -279,5 +279,8 @@ position: absolute;
     .web{
       font-size: 0.5rem;
     }
-
+    #Right > div{
+      justify-content: space-between;
+      align-items: center;
+     }
   } 
