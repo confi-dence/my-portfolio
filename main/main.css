@@ -32,6 +32,10 @@ background: linear-gradient(90deg, rgba(0, 0, 0, 0.544),transparent);
    animation: slideDownRight 1s ease-out forwards;
    z-index: 10;
 }
+
+.focus{
+  color: #F59E0B;
+}
 @keyframes slideDownRight{
    to{
        height: 100%;
@@ -221,6 +225,50 @@ position: absolute;
   z-index: 10;
   background-color: rgba(0, 0, 0, 0.485);
 }
+.wordSlide{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  bottom: 0;
+  animation: wordSlide 3s ease-in-out forwards;
+  z-index: 10;
+}
+@keyframes wordSlide {
+  from{
+    width: 0;
+text-transform: uppercase;
+align-items: end;
+  }
+  to{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+}
+.wordSlideBack{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  bottom: 0;
+  animation: wordSlideBack 3s ease-in-out forwards;
+  z-index: 10;
+}
+/* @keyframes wordSlideBack {
+  from{
+    width: 100%;
+text-transform: uppercase;
+align-items: end;
+  }
+  to{
+    width: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+} */
 
 @keyframes slideleftUp {
   to {

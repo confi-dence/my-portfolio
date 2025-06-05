@@ -3,7 +3,8 @@ upanddown = document.getElementById('upanddown'),
 cross = document.querySelectorAll('[id^="cross-"]'),
 content = document.getElementById('contents'),
 left = document.getElementById('left'),
-Right = document.getElementById('Right')
+Right = document.getElementById('Right'),
+slide = document.getElementById('slide')
 
 
 const image1 = '../main/images/menuB.png';
@@ -21,6 +22,9 @@ function menuButton() {
     content.classList.add('reduceOpacity')
     left.classList.remove('slideleftOut');
     Right.classList.remove('slideDownOut');
+    slide.classList.add('wordSlide')
+    slide.classList.remove('wordSlideBack')
+
     // void menu.offsetWidth; 
     setTimeout(()=>{
       menu.style.display = 'none'
@@ -32,28 +36,29 @@ isMenuOpen = true
 
 menu.addEventListener('click', menuButton);
 // function crossButton() {
-//   if (menu.src.includes('menuB.png')) {
+  //   if (menu.src.includes('menuB.png')) {
 //     cross.classList.toggle('rotateBack');
 //     cross.classList.remove('rotate');
  
 //     setTimeout(()=>{
-//       menu.style.display = 'flex'
-//       upanddown.style.display = 'none'
-
-//     },500)
-//   }
-// }
-
-// cross.addEventListener('click', crossButton);
-
-cross.forEach(search => {
-  search.addEventListener('click', function () {
-    if (menu.src.includes('menuB.png')) {
-      left.classList.add('slideleftOut');
-      Right.classList.add('slideDownOut');
-      search.classList.add('rotateBack');
-      search.classList.remove('rotate');
-      content.classList.remove('reduceOpacity')
+  //       menu.style.display = 'flex'
+  //       upanddown.style.display = 'none'
+  
+  //     },500)
+  //   }
+  // }
+  
+  // cross.addEventListener('click', crossButton);
+  
+  cross.forEach(search => {
+    search.addEventListener('click', function () {
+      if (menu.src.includes('menuB.png')) {
+        left.classList.add('slideleftOut');
+        Right.classList.add('slideDownOut');
+        search.classList.add('rotateBack');
+        search.classList.remove('rotate');
+        content.classList.remove('reduceOpacity')
+        slide.classList.add('wordSlideBack')
       setTimeout(()=>{
         menu.style.display = 'flex'
         upanddown.style.display = 'none'
@@ -66,3 +71,4 @@ cross.forEach(search => {
     }
   })
 })
+
