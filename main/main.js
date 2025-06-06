@@ -23,7 +23,7 @@ function menuButton() {
     left.classList.remove('slideleftOut');
     Right.classList.remove('slideDownOut');
     slide.classList.add('wordSlide')
-    slide.classList.remove('wordSlideBack')
+    slide.classList.remove('wordSlideClose')
 
     // void menu.offsetWidth; 
     setTimeout(()=>{
@@ -58,7 +58,8 @@ menu.addEventListener('click', menuButton);
         search.classList.add('rotateBack');
         search.classList.remove('rotate');
         content.classList.remove('reduceOpacity')
-        slide.classList.add('wordSlideBack')
+        slide.classList.add('wordSlideClose')
+        slide.classList.remove('wordSlide')
       setTimeout(()=>{
         menu.style.display = 'flex'
         upanddown.style.display = 'none'
