@@ -23,7 +23,7 @@ function menuButton() {
     left.classList.remove('slideleftOut');
     Right.classList.remove('slideDownOut');
     slide.classList.add('wordSlide')
-    slide.classList.remove('wordSlideClose')
+    // slide.classList.remove('wordSlideClose')
 
     // void menu.offsetWidth; 
     setTimeout(()=>{
