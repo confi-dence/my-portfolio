@@ -7,10 +7,13 @@ Right = document.getElementById('Right'),
 slide = document.getElementById('slide')
 
 
+
+
 const image1 = '../main/images/menuB.png';
 const image2 = '../main/images/cross.png';
 
 let isMenuOpen = false
+
 function menuButton() {
 
   if (!isMenuOpen) {
@@ -24,8 +27,7 @@ function menuButton() {
     Right.classList.remove('slideDownOut');
     slide.classList.add('wordSlide')
     // slide.classList.remove('wordSlideClose')
-
-    // void menu.offsetWidth; 
+    // void menu.offsetWidth;
     setTimeout(()=>{
       menu.style.display = 'none'
       upanddown.style.display = 'flex'
