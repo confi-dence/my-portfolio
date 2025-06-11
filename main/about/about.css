@@ -1,4 +1,67 @@
 .textOpacity{
 background: linear-gradient(90deg, rgba(0, 0, 0, 0.324), rgba(255, 255, 255, 0.357));
-width: 90%;
+width: 100%;
+}
+#hel{
+    height: 125vh;
+    
+}
+
+
+#cards > div:nth-child(2){
+    border-bottom: 4px solid yellow;
+}
+#cards > div:nth-child(3){
+    border-bottom: 4px solid yellow;
+}
+ul >li{
+    list-style-type: disc;
+}
+@media screen and (max-width:750px) {
+    #hel{
+        height: 156vh;
+       
+        justify-content: center;
+        /* align-items: center; */
+    }
+ 
+#imageBio{
+    flex-direction: column;
+}
+#Bio{
+width: 100%;
+text-align: center;
+}
+#mainBioA{
+    /* background: #000; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#cards{
+    /* background-color: yellow; */
+height: 150%;
+    flex-direction: column;
+    row-gap: 2vh;
+}
+#cards:nth-child(1){
+    display: none;
+}
+#Skills{
+    grid: auto auto ;
+    /* background-color: yellow; */
+}
+
+}
+
+@media screen and (max-width:550px) {
+    #hel{
+        height: 167vh;
+
+    }
+
+    #img-top{
+        margin-top: -5vh;
+    }
+  
 }

@@ -9,32 +9,67 @@
     <link rel="stylesheet" href="about.css">
 </head>
 <body class="box-border p-0 m-0 italic font-bold">
-    <div class="h-screen flex">
-        <div  class="flex-1 text-white flex-col flex flex-row w-full h-full overflow-hidden absolute inset-x-0 top-0 bg-opacity-85 bg-black">
-            <div class=" flex justify-end items-center flex-[0.1]" id="img-top">
+    <div class=" flex" >
+        <div id="hel" class="flex-1 text-white flex-col flex flex-row w-full h-full overflow-hidden absolute inset-x-0 top-0 bg-opacity-85 bg-black">
+            <div class=" flex justify-end items-center flex-[0.08]" id="img-top">
                 <img class="h-8 mx-10" id="menu" src="../images/menuB.png" alt="">
             </div>          
-            <div class="flex-[0.9] flex pl-16" id="portfolio">
-                <div class="font-normal flex-[0.9] flex-col flex" id="contents">
-                    <div class="flex-[0.2] flex flex-col">
-                        <div class="text-7xl " id="name">About <strong class="font-normal text-yellow-500">Me</strong></div>
+            <div class="flex-[0.92] bg flex pl-16" id="portfolio">
+                <div class="font-normal  flex-col flex" id="contents">
+                    <div class="flex-[0.1] flex flex-col">
+                        <div class="text-8xl " id="name">About <strong class="font-normal text-yellow-500">Me</strong></div>
                         <div class=" bg-opacity-10 py-2 mt-4">
-                            <div class="pl-4 text-2xl textOpacity items-center flex h-12" id="web">Let me tell You a few thing....</div>
+                            <div class="pl-4 text-2xl textOpacity items-center flex h-10" id="web">Let me tell You a few thing....</div>
                         </div>
                     </div>
-                    <div class="flex-[0.3] flex">
-                        <div class="flex-[0.3] bg-black bg-opacity-10">
-                            <img class="h-64 w-64 rounded-full" src="../images/confy3.jpg" alt="">
+                    <div class="flex-[0.4] flex" id="imageBio">
+                        <div class="flex-[0.4] flex justify-center items-center flex-col">
+                            <div class="bg-[url('../images/confy3.jpg')] bg-black bg-opacity-40 bg-blend-multiply rounded-full bg-cover bg-center h-64 w-56">
+                              </div>
+                            <!-- <img class="h-64 w-64 rounded-full" src="../images/confy3.jpg" alt=""> -->
                         </div>
-                        <div class="flex-[0.7] flex flex-col bg-black">
-                            <div class="flex text-3xl"><strong class="font-normal text-yellow-500">Bio</strong></div>
-                            <div>mrjrjrj</div>
-                            <div></div>
+                       <div class="flex-[0.7]" id="mainBioA">
+                        <div class="flex-[0.9] bg flex flex-col" id="BioA">
+                            <div class="flex text-3xl mt-4"><strong class="font-normal text-yellow-500" id="Bio" >Bio</strong></div>
+                            <div class="text-lg" id="abt">I have experience working with popular frameworks such as Angular, Flutter, and React Native, as well as core web technologies including HTML, CSS, and JavaScript.
+
+                                I possess a strong analytical mindset that enables me to tackle complex problems and develop effective solutions. Additionally, I am equipped with a broad skill set and a passion for creating innovative and efficient software solutions.
+                                
+                                I enjoy exploring new technologies and conducting research to continuously expand my knowledge.
+                            </div>
+                            <div id="download"></div>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="flex-[0.45] justify-between flex h-64 mb-3.5 mt-2" id="cards">
+                        <!-- where i worked -->
+                        <div class="flex-[0.33]" id=""></div>
+                        <!-- what learnts -->
+                        <div class="flex-[0.33] bg-black bg-opacity-40 ">
+                            <p class="text-yellow-500 mb-3 text-xl pl-8">Programming Skills</p>
+                            <ul class="pl-8" id="Skills">
+                                <li>html</li>
+                                <li>css</li>
+                                <li>JavaScript</li>
+                                <li>Tailwind</li>
+                            </ul>
+                        </div>
+                        <!-- what i learnt -->
+                        <div class="flex-[0.33]  bg-black bg-opacity-40">
+                            <p class="text-yellow-500 mb-3 text-xl pl-8">FrameWorks</p>
+                            <ul class="pl-8">
+                                <li>Angular</li>
+                                <li>Flutter</li>
+                                <li>ReactNative</li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="flex-[0.4]"></div>
-                    <div class="flex-[0.1] bg-opacity-80 bg-black">
-                        <div id="date"><strong id="time"></strong></div>
+                    <div class="flex-[0.06] flex flex-col"  id="footer">
+                        <div class="flex flex-[1] gap-x-1.5  bg-black bg-opacity-50 justify-center items-center">
+                            <p class="text-lg">Confidence Mgbeojikwe @</p>
+                            <p class="text-lg" id="date"></p>
+                            <p class="text-lg" id="time"></p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -42,7 +77,9 @@
         <div class="absolute hidden flex  w-full h-full" id="upanddown">
             <div class="flex justify-center items-center " id="Right">
                <div class="flex">
-                 <img class="h-64 w-64 rounded-full" src="../images/confy2.jpg" id="confy-image" alt="">
+                <div class="bg-[url('../images/confy2.jpg')] bg-black bg-opacity-30 bg-blend-multiply rounded-full bg-cover bg-center h-64 w-64" id="confy-image">
+                </div>
+                 <!-- <img class="h-64 w-64 rounded-full" src="../images/confy2.jpg" id="confy-image" alt=""> -->
                 <img class="h-9 mx-10 mb-14 " src="../images/cross.png" id="cross-1" alt="">
                </div>
             </div>
@@ -51,7 +88,7 @@
                     <img class="h-9 mx-10  " src="../images/cross.png" id="cross-2" alt="">
                 </div>
                 <div  class="flex-[0.9] flex items-center justify-center">
-                    <ul class="flex flex-col items-center justify-center     gap-y-10"  id="slide" >
+                    <ul class="flex flex-col items-center list-none justify-center     gap-y-10"  id="slide" >
                         <li>
                             <a href="../main.html" id="AboutMe" class="text-white text-3xl">Home</a>
                         </li>
@@ -72,4 +109,5 @@
     </div>
 </body>
 <script src="../main.js"></script>
+<script src="./about.js"></script>
 </html>

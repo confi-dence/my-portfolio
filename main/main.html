@@ -9,7 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="box-border p-0 m-0 italic font-bold">
+<body class="box-border overflow-hidden p-0 m-0 italic font-bold">
     <div class="h-screen flex">
         <div class=" bg-gray-300 flex-1">
             <img src="../main/images/laptop.jpg" class="w-full h-screen" alt="">
@@ -28,7 +28,11 @@
                     <div>
                         <ul id="faceLinked" class="flex pl-4 gap-x-3">
                             <li><a href="https://github.com/confi-dence?tab=repositories">
-                                    <img class="h-9" id="img" src="../main/images/github.png" alt="">
+                                <!-- <div class="bg-[url('../main/images/github.png')] bg-black bg-opacity-40 bg-blend-mu">
+                                </div> -->
+                                <div class="bg-[url('../main/images/github.png')]">
+                                </div>
+                                    <!-- <img class="h-9" id="img" src="../main/images/github.png" alt=""> -->
                                 </a></li>
                             <li><a href="https://web.facebook.com/?_rdc=1&_rdr#">
                                     <img class="h-9" id="img" src="../main/images/facebook.png" alt="">
@@ -42,7 +46,7 @@
             </div>
         </div>
         <div class="absolute hidden flex  w-full h-full" id="upanddown">
-            <div class="flex justify-center items-center " id="Right">
+            <div class="flex justify-center items-center" id="Right">
                <div class="flex">
                  <img class="h-64 w-64 rounded-full" src="../main/images/confy2.jpg" id="confy-image" alt="">
                 <img class="h-9 mx-10 mb-14 " src="../main/images/cross.png" id="cross-1" alt="">

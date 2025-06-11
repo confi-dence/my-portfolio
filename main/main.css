@@ -1,7 +1,5 @@
 
-body{
-  overflow: hidden;
-}
+
 
   .web{
 background: linear-gradient(90deg, rgba(0, 0, 0, 0.544),transparent);
@@ -18,7 +16,7 @@ background: linear-gradient(90deg, rgba(0, 0, 0, 0.544),transparent);
     transform: rotateZ(180deg);
   }
   .rotateBack{
-    transform: rotateZ(-180deg);
+    transform: rotateZ(-180deg); 
   }
 /* .backGroun{
   background-image: url('../main/images/');
@@ -154,6 +152,10 @@ overflow: hidden;
 /* to hover my li>a */
 #AboutMe:hover{
   color: #F59E0B;
+}
+a > div :hover{
+background-blend-mode: multiply;
+background-color: rgba(0, 0, 0, 0.175);
 }
 /* media query */
   @media screen and (max-width: 1100px) {
