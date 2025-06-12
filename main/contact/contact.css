@@ -1,0 +1,9 @@
+.fewThings{
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.324), rgba(255, 255, 255, 0.357));
+    width: 100%;
+    }
+    #Mycontacts > div{
+        border: 2px solid white;
+        height: 15vh;
+    }
+ 
