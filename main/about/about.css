@@ -6,6 +6,14 @@ width: 100%;
     height: 125vh;
     
 }
+#Skills > li{
+    grid: auto auto ;
+    list-style-type: disc;
+}
+#contents{
+    max-width: 1200px;
+    width: 80%;
+}
 
 
 #cards > div:nth-child(2){
@@ -14,9 +22,7 @@ width: 100%;
 #cards > div:nth-child(3){
     border-bottom: 4px solid yellow;
 }
-ul >li{
-    list-style-type: disc;
-}
+
 @media screen and (max-width:750px) {
     #hel{
         height: 156vh;
@@ -47,10 +53,7 @@ height: 150%;
 #cards:nth-child(1){
     display: none;
 }
-#Skills{
-    grid: auto auto ;
-    /* background-color: yellow; */
-}
+
 
 }
 

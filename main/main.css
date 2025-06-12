@@ -2,13 +2,30 @@
 
 
   .web{
+    display: flex;
+justify-content: center;
 background: linear-gradient(90deg, rgba(0, 0, 0, 0.544),transparent);
+  }
+  .web> div{
+    /* background: red; */
+    width: 90%;
   }
   #menu, #cross-1, #cross-2{
     display: inline-block; 
     transition: transform 0.5s ease;
     transform-origin: center;
   }
+  #portfolio{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+  }
+  #contents{
+    /* background-color: red; */
+    width: 95%;
+    max-width: 1000px;
+  }
+  
   #confy-image{
     border: 4px solid  #F59E0B;
   }
@@ -72,7 +89,7 @@ overflow: hidden;
  right: 0;
  width: 50%;
  height:0;
- background-color: rgba(47, 44, 44, 0.476);
+ background-color: rgba(47, 44, 44, 0.808);
  animation: slideDownRight 1s ease-out forwards;
  z-index: 10;
 }
@@ -90,7 +107,7 @@ overflow: hidden;
   height: 0;
   animation: slideDownOut 1s ease-out forwards;
   z-index: 10;
-  background-color: rgba(47, 44, 44, 0.476);
+  background-color: rgba(47, 44, 44, 0.808);
 }
 @keyframes slideDownOut{
   from{
@@ -110,7 +127,7 @@ overflow: hidden;
    height:0;
    animation: slideleftUp 1s ease-out forwards;
    z-index: 10;
-   background-color:rgba(0, 0, 0, 0.485);
+   background-color:rgba(0, 0, 0, 0.781);
 
 }
 @keyframes slideleftUp{
@@ -130,7 +147,7 @@ overflow: hidden;
   height: 0;
   animation: slideleftOut 1s ease-out forwards;
   z-index: 10;
-  background-color: rgba(0, 0, 0, 0.485);
+  background-color: rgba(0, 0, 0, 0.781);
 }
 
 @keyframes slideleftOut {
@@ -142,33 +159,29 @@ overflow: hidden;
   }
 
 }
+#img{
+  height: 40px;
+  width: 40px;
+}
 
+#img:hover{
+   border-radius: 50%;
+   background-blend-mode: multiply;
+   background-color: #f59f0b78;  
+ }
 #cross-1{
   display: none;
 }
 .reduceOpacity{
-  opacity: 0.4;
+  opacity: 0.05;
 }
 /* to hover my li>a */
 #AboutMe:hover{
   color: #F59E0B;
 }
-a > div :hover{
-background-blend-mode: multiply;
-background-color: rgba(0, 0, 0, 0.175);
-}
 /* media query */
   @media screen and (max-width: 1100px) {
-   .Confidence{
-    padding-left: 7vh;
-   }
-    #contents{
-      width: 100%;
-      max-width: 900px;
-      /* background-color: yellow; */
-    }
     #name{
-
       text-align: center;
     }
     .web, #web{
@@ -196,7 +209,8 @@ background-color: rgba(0, 0, 0, 0.175);
       margin-top: 4vh;
     }
  #img{
-  height: 25px;
+  height: 30px;
+  width: 30px;
  }
  #Right{
   justify-content: end;
@@ -208,7 +222,6 @@ background-color: rgba(0, 0, 0, 0.175);
  #Right > div{
   justify-content: space-between;
   align-items: center;
-  padding-left: 6vh;
   width: 80%;
   max-width: 500px;
 
@@ -233,7 +246,7 @@ position: absolute;
  height:25%;
  animation: slideDownRight 0.5s ease-out forwards;
  z-index: 10;
- background-color: rgba(47, 44, 44, 0.476);
+ background-color: rgba(47, 44, 44, 0.808);
 }
 @keyframes slideDownRight{
  to{
@@ -248,7 +261,7 @@ position: absolute;
   height: 25%;
   animation: slideDownOut 0.5s ease-out forwards;
   z-index: 10;
-  background-color: rgba(47, 44, 44, 0.476);
+  background-color: rgba(47, 44, 44, 0.808);
 }
 @keyframes slideDownOut{
   from{
@@ -272,7 +285,7 @@ position: absolute;
   height: 75%;
   animation: slideleftUp 0.5s ease-out forwards;
   z-index: 10;
-  background-color: rgba(0, 0, 0, 0.485);
+  background-color: rgba(0, 0, 0, 0.781);
 }
 
 @keyframes slideleftUp {
@@ -292,7 +305,7 @@ position: absolute;
   height: 75%;
   animation: slideleftOut 0.5s ease-out forwards;
   z-index: 10;
-  background-color: rgba(0, 0, 0, 0.485);
+  background-color: rgba(0, 0, 0, 0.781);
 }
 
 @keyframes slideleftOut {
@@ -327,9 +340,7 @@ position: absolute;
 #cross-2{
   display: none;
 }
-#portfolio{
-  padding-left: 2vh;
-}
+
 
   }
 
@@ -341,7 +352,6 @@ position: absolute;
       font-size: 20px;
     }
     #Right > div{
-      padding-left: 10px;
       width: 100%;
       justify-content: space-between;
       align-items: center;
@@ -349,4 +359,8 @@ position: absolute;
      #slide> li > a{
       font-size: 25px;
      } 
+     #menu,#cross-1, #cross-2{
+      position: relative;
+      left: 26px;
+     }
   } 
