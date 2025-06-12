@@ -4,7 +4,8 @@ cross = document.querySelectorAll('[id^="cross-"]'),
 content = document.getElementById('contents'),
 left = document.getElementById('left'),
 Right = document.getElementById('Right'),
-slide = document.getElementById('slide')
+slide = document.getElementById('slide'),
+bodys = document.getElementById('body')
 
 
 
@@ -26,6 +27,7 @@ function menuButton() {
     left.classList.remove('slideleftOut');
     Right.classList.remove('slideDownOut');
     slide.classList.add('wordSlide')
+    bodys.classList.add('overfkow')
     // slide.classList.remove('wordSlideClose')
     // void menu.offsetWidth;
     setTimeout(()=>{
@@ -62,6 +64,8 @@ menu.addEventListener('click', menuButton);
         content.classList.remove('reduceOpacity')
         slide.classList.add('wordSlideClose')
         slide.classList.remove('wordSlide')
+    bodys.classList.remove('overfkow')
+
       setTimeout(()=>{
         menu.style.display = 'flex'
         upanddown.style.display = 'none'

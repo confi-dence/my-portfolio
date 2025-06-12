@@ -1,11 +1,12 @@
- const date = document.getElementById('date'),
+//  const date = document.getElementById('date'),
 time = document.getElementById('time')
 
-date.innerText = new Date().getFullYear()
 const now = new Date();
 let hours = now.getHours();
 let minutes = now.getMinutes();
+let date = now.getFullYear()
 let ampm = 'PM'
+let Names = 'Mgbeojikwe Confidence'
 if(hours >= 12){
     ampm = 'PM'
 }else{
@@ -24,7 +25,8 @@ if(minutes >= 10){
     minutes = '0'+ minutes
 }
 
-time.innerText = `${hours}:${minutes} ${ampm}`;
+time.innerText = `${Names}  \n date/time: ${date} ${hours}:${minutes} ${ampm}`;
+// time.innerText = 'gdgdgdgd  \n  Hshshssh'
 
 
 

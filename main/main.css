@@ -175,6 +175,10 @@ overflow: hidden;
 .reduceOpacity{
   opacity: 0.05;
 }
+.overfkow{
+  overflow: hidden;
+
+}
 /* to hover my li>a */
 #AboutMe:hover{
   color: #F59E0B;

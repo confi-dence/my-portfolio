@@ -3,25 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About Me</title>
     <link rel="stylesheet" href="../main.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="about.css">
 </head>
 <body class="box-border p-0 m-0 italic font-bold">
-    <div class="h-screen flex">
-        <div  class="flex-1 text-white flex-col flex flex-row w-full h-full overflow-hidden absolute inset-x-0 top-0 bg-opacity-90 bg-black">
-            <div class=" flex justify-end items-center flex-[0.1]" id="img-top">
+    <div class=" flex" >
+        <div class="flex-1 text-white flex-col flex flex-row w-full h-full overflow-hidden absolute inset-x-0 top-0 bg-opacity-85 bg-black">
+            <div class=" flex justify-end items-center flex-[0.08]" id="img-top">
                 <img class="h-8 mx-10" id="menu" src="../images/menuB.png" alt="">
-            </div>
-            <div class="flex-[0.9] pl-16" id="portfolio">
-                <div class="font-normal mt-32" id="contents">
+            </div>          
+            <div class="flex-[0.92] justify-center flex " id="portfolio">
+                <div class="font-normal flex-[0.9] flex-col flex" id="contents">
+                   
                 </div>
             </div>
         </div>
         <div class="absolute hidden flex  w-full h-full" id="upanddown">
             <div class="flex justify-center items-center " id="Right">
                <div class="flex">
-                 <img class="h-64 w-64 rounded-full" src="../images/confy2.jpg" id="confy-image" alt="">
+                <div class="bg-[url('../images/confy2.jpg')] bg-black bg-opacity-30 bg-blend-multiply rounded-full bg-cover bg-center h-64 w-64" id="confy-image">
+                </div>
+                 <!-- <img class="h-64 w-64 rounded-full" src="../images/confy2.jpg" id="confy-image" alt=""> -->
                 <img class="h-9 mx-10 mb-14 " src="../images/cross.png" id="cross-1" alt="">
                </div>
             </div>
@@ -29,25 +33,27 @@
                 <div class="flex-[0.1] flex justify-end items-center">
                     <img class="h-9 mx-10  " src="../images/cross.png" id="cross-2" alt="">
                 </div>
-                <div  class="flex-[0.9] flex justify-center">
-                    <ul class="flex flex-col gap-y-10 mt-32" id="UlAboutMe" >
+                <div  class="flex-[0.9] flex items-center justify-center">
+                    <ul class="flex flex-col items-center list-none justify-center     gap-y-10"  id="slide" >
                         <li>
-                            <a href="../main.html" id="AboutMe" class="text-white text-3xl  text-yellow-500">Home</a>
+                            <a href="../main.html" id="AboutMe" class="text-white text-3xl">Home</a>
                         </li>
                         <li>
-                            <a href="" id="AboutMe" class="text-white text-3xl">About Me</a>
+                            <a href="../about/about.html" id="AboutMe" class="text-white text-3xl">About Me</a>
                         </li>
                         <li>
                             <a href="" id="AboutMe" class="text-white text-3xl">My Work</a>
                         </li>
                         <li>
-                            <a href="./contact.html" id="AboutMe" class="text-white text-3xl">How To Reach Me</a>
+                            <a href="./contact.html" id="AboutMe" class="text-white text-3xl text-yellow-500">How To Reach Me</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
+        <div></div>
     </div>
 </body>
 <script src="../main.js"></script>
+<script src="./about.js"></script>
 </html>
