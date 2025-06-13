@@ -71,18 +71,18 @@
         position: relative;
         width: 10px;
         height:  10px;
-        background-color: #4fc3dc;
+        background-color: #fff;
         margin: 0 4px;
         border-radius: 50%;
-        box-shadow: 0 0 0 10px #4fc3dc44, 
-        0 0 50px #4fc3dc,
-        0 0 100px #4fc3dc;
+        box-shadow: 0 0 0 10px #312a2a, 
+        0 0 50px #fff,
+        0 0 100px #fff;
         animation: tailwind 15s linear infinite;
         animation-duration: calc(150s /var(--i));
       }
       .bubbles span:nth-child(even){
         background-color: #a37b2f;
-        box-shadow: 0 0 0 10px #c2dc4f44, 
+        box-shadow: 0 0 0 10px #849247f8, 
         0 0  50px #a37b2f,
         0 0  100px #a37b2f;
       }
