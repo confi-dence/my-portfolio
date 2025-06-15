@@ -78,4 +78,3 @@ menu.addEventListener('click', menuButton);
     }
   })
 })
-
