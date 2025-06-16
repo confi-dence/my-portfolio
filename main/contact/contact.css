@@ -15,7 +15,7 @@
         margin-bottom: 5vh;
         width: 100%;
         -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
-        line-height: 0.670em;
+        line-height: -1991px;
         outline: none;
         animation:  animate 7s ease-in infinite;
       }
@@ -40,62 +40,6 @@
       }
 
 
-      .bubbles, .Secondbubble {
-        position: relative;
-        top: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      
-      .bubbles > span,
-      .Secondbubble > span {
-        /* position: relative; */
-        width: 15px;
-        height: 15px;
-        background-color: #fff;
-        margin: 0 4px;
-        border-radius: 50%;
-        box-shadow: 0 0 0 5px #312a2a, 0 0 50px #fff, 0 0 100px #fff;
-        animation-duration: calc(5000s / var(--i));
-      }
-      
-      .bubbles > span {
-        animation: tailwind 15s linear infinite;
-      }
-      
-      .Secondbubble > span {
-        animation: Secondbubble 15s linear infinite;
-      }
-      
+   
+ 
 
-      .bubbles span:nth-child(even){
-        background-color: #fff;
-        box-shadow: 0 0 0 5px #849247f8, 
-        0 0  50px #a37b2f,
-        0 0  100px #a37b2f;
-      }
-      .Secondbubble span:nth-child(even){
-        background-color: #fff;
-        box-shadow: 0 0 0 5px #849247f8, 
-        0 0  50px #a37b2f,
-        0 0  100px #a37b2f;
-      }
-      @keyframes tailwind {
-        0% {
-          transform: translateY(100) scale(0.2);
-        }
-        100% {
-          transform: translateY(-10vh) scale(0.7);
-        }
-      }
-      
-      @keyframes Secondbubble {
-        0% {
-          transform: translateY(-10) scale(0.2);
-        }
-        100% {
-          transform: translateY(100vh) scale(0.7);
-        }
-      }
-      
