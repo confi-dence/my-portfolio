@@ -438,4 +438,7 @@ position: absolute;
       position: relative;
       left: 26px;
      }
+     .bubbles{
+      top: 8.5vh;
+    }
   } 
