@@ -4,10 +4,13 @@
 }
 
 
-#Mycontacts>div {
-    border: 2px solid white;
+#linkedin > div, #EmailPhone>div
+ {
+    border: 5px solid white;
+    border-radius: 10px;
     height: 15vh;
 }
+
       #name{
         text-align: center;
         color: #3b3935;
@@ -19,7 +22,7 @@
         outline: none;
         animation:  animate 7s ease-in infinite;
       }
-
+ 
       @keyframes animate {
         0%, 18%, 20%, 50.1%, 60%, 65.1% ,80%, 90.1%, 92%
         {
@@ -38,8 +41,71 @@
             0 0 200px #fff;
         }
       }
+ 
 
 
    
- 
+ @media screen and (max-width: 1300px) {
+  #EmailPhone{
+    flex: 0.7;
+  /* align-items: baseline; */
+  justify-content: space-around;
+  flex-direction: column;
+  /* row-gap: 10vh; */
+  }
+  #EmailPhone > div:nth-child(1){
+    flex: 0.35;
+    width: 60%;
+  }
+  #EmailPhone > div:nth-child(2){
+    flex: 0.35;
+    width: 40%;
+    /* background-color: palegoldenrod; */
+  }
+  #linkedin{
+flex: 0.3;
+/* background-color: rebeccapurple; */
+  }
+  #linkedin > div{
+    flex: 0.6;
+  }
+
+ }
+ @media screen and (max-width:960px) {
+  #EmailPhone > div:nth-child(1){
+    flex: 0.35;
+    width: 80%;
+  }
+  #EmailPhone > div:nth-child(2){
+    flex: 0.35;
+    width: 60%;
+    /* background-color: palegoldenrod; */
+  }
+  #linkedin > div{
+    flex: 0.78;
+  }
+
+  #contactMe{
+    font-size: 21px;
+  }
+ }
+ @media screen and (max-width:550px) {
+  #EmailPhone > div:nth-child(1){
+    flex: 0.33;
+    width: 90%;
+  }
+  #EmailPhone > div:nth-child(2){
+    flex: 0.33;
+    width: 70%;
+    /* background-color: palegoldenrod; */
+  }
+  #linkedin > div{
+    flex: 0.9;
+    height: 77%;
+  }
+  #contactMe{
+    font-size: 18px;
+  }
+ }
+
 
