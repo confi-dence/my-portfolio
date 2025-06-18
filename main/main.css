@@ -173,7 +173,7 @@ overflow: hidden;
   display: none;
 }
 .reduceOpacity{
-  opacity: 0.05;
+  opacity: 0.002;
 }
 .overfkow{
   overflow: hidden;
@@ -210,7 +210,7 @@ overflow: hidden;
   0 0 50px #fff,
   0 0 100px #fff;
   animation: tailwind 15s linear infinite;
-  animation-duration: calc(6000s /var(--i));
+  animation-duration: calc(5000s /var(--i));
   /* animation-delay: 3s; */
 }
 
@@ -226,7 +226,7 @@ overflow: hidden;
   0 0 50px #ffffff,
   0 0 100px #fff;
   animation: Secondbubble 15s linear infinite;
-  animation-duration: calc(6000s /var(--i));
+  animation-duration: calc(5000s /var(--i));
   /* animation-delay: 3s; */
 }
 
@@ -326,7 +326,7 @@ position: absolute;
  height:25%;
  animation: slideDownRight 0.5s ease-out forwards;
  z-index: 10;
- background-color: rgba(47, 44, 44, 0.808);
+ background-color: rgba(47, 44, 44, 0.438);
 }
 @keyframes slideDownRight{
  to{
@@ -341,7 +341,7 @@ position: absolute;
   height: 25%;
   animation: slideDownOut 0.5s ease-out forwards;
   z-index: 10;
-  background-color: rgba(47, 44, 44, 0.808);
+  background-color: rgba(47, 44, 44, 0.507);
 }
 @keyframes slideDownOut{
   from{
