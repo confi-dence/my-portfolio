@@ -25,7 +25,7 @@ if(minutes >= 10){
     minutes = '0'+ minutes
 }
 
-time.innerText = `${Names}  \n date/time: ${date} ${hours}:${minutes} ${ampm}`;
+time.innerText = `${Names}  \n year/time: ${date} ${hours}:${minutes} ${ampm}`;
 // time.innerText = 'gdgdgdgd  \n  Hshshssh'
 
 
