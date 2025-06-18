@@ -91,16 +91,34 @@ flex: 0.3;
  }
  @media screen and (max-width:550px) {
   #EmailPhone > div:nth-child(1){
-    flex: 0.33;
+    flex: 0.3;
     width: 90%;
   }
   #EmailPhone > div:nth-child(2){
-    flex: 0.33;
+    flex: 0.3;
     width: 70%;
     /* background-color: palegoldenrod; */
   }
   #linkedin > div{
     flex: 0.9;
+    height: 68%;
+  }
+  #contactMe{
+    font-size: 18px;
+  }
+ }
+ @media screen and (max-width:400px) {
+  #EmailPhone > div:nth-child(1){
+    flex: 0.33;
+    width: 100%;
+  }
+  #EmailPhone > div:nth-child(2){
+    flex: 0.33;
+    width: 80%;
+    /* background-color: palegoldenrod; */
+  }
+  #linkedin > div{
+    flex: 1;
     height: 77%;
   }
   #contactMe{

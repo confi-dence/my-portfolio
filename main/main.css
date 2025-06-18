@@ -210,9 +210,11 @@ overflow: hidden;
   0 0 50px #fff,
   0 0 100px #fff;
   animation: tailwind 15s linear infinite;
-  animation-duration: calc(10000s /var(--i));
+  animation-duration: calc(6000s /var(--i));
   /* animation-delay: 3s; */
 }
+
+
 .Secondbubble > span{
   position: relative;
   width: 15px;
@@ -224,7 +226,7 @@ overflow: hidden;
   0 0 50px #ffffff,
   0 0 100px #fff;
   animation: Secondbubble 15s linear infinite;
-  animation-duration: calc(10000s /var(--i));
+  animation-duration: calc(6000s /var(--i));
   /* animation-delay: 3s; */
 }
 

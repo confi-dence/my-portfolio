@@ -8,10 +8,10 @@ slide = document.getElementById('slide'),
 bodys = document.getElementById('body')
 
 
-
-
 const image1 = '../main/images/menuB.png';
 const image2 = '../main/images/cross.png';
+const bubbles = document.querySelectorAll('.bubbles > span');
+
 
 let isMenuOpen = false
 
