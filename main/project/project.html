@@ -10,53 +10,51 @@
     
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="box-border p-0 m-0 italic font-medium" id="body">
-    
-    <div class=" flex" >
-   
-        <div id="hel" class="flex-1 text-white absolute flex-col flex flex-row w-full h-full overflow-hidden absolute inset-x-0 top-0 bg-opacity-85 bg-black">
-          
-         <div class=" flex justify-end items-center flex-[0.07]" id="img-top">
-                <img class="h-8 mx-10 mt-4" id="menu" src="../images/menuB.png" alt="">
-         </div>          
-            <div class="flex-[0.93] justify-center flex " id="portfolio">
+<body class="box-border  p-0 m-0 italic font-medium" id="body">
+    <div class=" flex" id="textshawdow">
+        <div id="hel" class="flex-1 text-white flex-col flex flex-row w-full h-full overflow-hidden absolute inset-x-0 top-0 bg-opacity-85 bg-black">
+            <div class=" flex justify-end items-center flex-[0.08]" id="img-top">
+                <img class="h-8 mx-10" id="menu" src="../images/menuB.png" alt="">
+            </div>          
+            <div class="flex-[0.92] justify-center flex " id="portfolio">
                 <div class=" flex-[0.9] flex-col flex" id="contents">
                     <div class="flex-[1] flex flex-col">
-                       <div class="flex-[0.3]">
-                        <div class="text-8xl  " id="name">My Work</div>
-                        <div class="bg-opacity-10 py-2 mt-12">
-                            <div class="pl-4 text-2xl fewThings items-center flex h-10" id="web">check out some of my project.....</div>
+                        <div class="flex-[0.3]">
+                         <div class="text-8xl  " id="name">My Work</div>
+                         <div class="bg-opacity-10 py-2 mt-12">
+                             <div class="pl-4 text-2xl fewThings items-center flex h-10" id="web">check out some of my project.....</div>
+                         </div>
                         </div>
-                       </div>
-                       <div class="flex-[0.7] text-xl grid grid-flow-col text-2xl" id="contactMes">
-                        <div>
-                            <div class=" flex justify-center bg-opacity-10">
-                            <div class="bg-[url('../images/calculator.jpg')] bg-black bg-blend-multiply bg-opacity-20  bg-cover bg-center h-64 w-64" ></div>
+                        <div class="flex-[0.7] text-xl grid grid-flow-col text-2xl" id="contactMes">
+                         <div>
+                             <div class=" flex justify-center bg-opacity-10">
+                             <div class="bg-[url('../images/calculator.jpg')] bg-black bg-blend-multiply bg-opacity-20  bg-cover bg-center h-64 w-64" ></div>
+                             </div>
+                            <div class="flex justify-center items-center flex-col">
+                             <p>calculator app</p>
+                             <button class="button text-lg">
+                                 <a href="https://confi-dence.github.io/calculator/build/home/home.html">View app</a>
+                             </button>
                             </div>
-                           <div class="flex justify-center items-center flex-col">
-                            <p>calculator app</p>
-                            <button class="button text-lg">
-                                <a href="https://confi-dence.github.io/calculator/build/home/home.html">View app</a>
-                            </button>
-                           </div>
-                       </div>
-                        <div >
-                            <div class="flex justify-center bg-opacity-10">
-                            <div class="bg-[url('../images/reactwhite.jpg')] bg-black bg-blend-multiply bg-opacity-20 bg-blend-multiply bg-cover bg-center h-64 w-64" ></div>
-                            </div>
-                           <div class="flex justify-center items-center flex-col">
-                            <p>ReactPage app</p>
-                            <button class="button text-lg">
-                                <a href="https://confi-dence.github.io/reactNativePage/pages/home/index.html">View app</a>
-                            </button>
-                           </div>
-                       </div>
-                    </div>
-                    <div class="flex-[0.1] flex flex-col"  id="footer">
-                        <div class="flex flex-[1] gap-x-1.5  bg-black bg-opacity-50 justify-center items-center">
-                            <p class="text-lg" id="time"></p>
                         </div>
-                    </div>
+                         <div >
+                             <div class="flex justify-center bg-opacity-10">
+                             <div class="bg-[url('../images/reactwhite.jpg')] bg-black bg-blend-multiply bg-opacity-20 bg-blend-multiply bg-cover bg-center h-64 w-64" ></div>
+                             </div>
+                            <div class="flex justify-center items-center flex-col">
+                             <p>ReactPage app</p>
+                             <button class="button text-lg">
+                                 <a href="https://confi-dence.github.io/reactNativePage/pages/home/index.html">View app</a>
+                             </button>
+                            </div>
+                        </div>
+                     </div>
+                     <div class="flex-[0.1] flex flex-col"  id="footer">
+                         <div class="flex flex-[1] gap-x-1.5  bg-black bg-opacity-50 justify-center items-center">
+                             <p class="text-lg" id="time"></p>
+                         </div>
+                     </div>
+                 </div>
                 </div>
             </div>
         </div>
@@ -65,6 +63,7 @@
                <div class="flex">
                 <div class="bg-[url('../images/confy2.jpg')] bg-black bg-opacity-30 bg-blend-multiply rounded-full bg-cover bg-center h-64 w-64" id="confy-image">
                 </div>
+                 <!-- <img class="h-64 w-64 rounded-full" src="../images/confy2.jpg" id="confy-image" alt=""> -->
                 <img class="h-9 mx-10 mb-14 " src="../images/cross.png" id="cross-1" alt="">
                </div>
             </div>
@@ -78,13 +77,13 @@
                             <a href="../main.html" id="AboutMe" class="text-white text-3xl">Home</a>
                         </li>
                         <li>
-                            <a href="../about/about.html" id="AboutMe" class="text-white text-3xl ">About Me</a>
+                            <a href="./about.html" id="AboutMe" class="text-white text-3xl text-yellow-500">About Me</a>
                         </li>
                         <li>
-                            <a href="../project/project.html" id="AboutMe" class="text-white text-3xl text-yellow-500">My Work</a>
+                            <a href="../project/project.html" id="AboutMe" class="text-white text-3xl">My Work</a>
                         </li>
                         <li>
-                            <a href="../contact/contact.html" id="AboutMe" class="text-white text-3xl ">How To Reach Me</a>
+                            <a href="../contact/contact.html" id="AboutMe" class="text-white text-3xl">How To Reach Me</a>
                         </li>
                     </ul>
                 </div>
@@ -93,6 +92,7 @@
         <div></div>
     </div>
 </body>
+
 <script src="../main.js"></script>
 <script src="../about/about.js"></script>
 </html>
