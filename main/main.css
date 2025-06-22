@@ -425,7 +425,7 @@ position: absolute;
 
   }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 550px) {
     #name{
       font-size: 3rem;
     }
@@ -444,7 +444,7 @@ position: absolute;
       position: relative;
       left: 26px;
      }
-     /* .bubbles{
+     .bubbles{
       top: -4.5vh;
-    } */
+    }
   } 
