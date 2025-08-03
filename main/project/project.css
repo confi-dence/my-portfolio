@@ -4,14 +4,28 @@
     height: 5vh;
     /* background-color: #000; */
 }
+#contactMes{
+    grid-template-columns: auto auto auto;
+}
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 850px) {
     #hel{
-        height: 142vh;
+        height: 144vh;
     }
     #contactMes{
         /* background: #000; */
         row-gap: 2vh;
-        grid-template-rows: auto auto auto;
+        grid-template-columns: auto auto;
+        margin-bottom: 2vh;
+} 
+}
+@media screen and (max-width: 560px) {
+    #hel{
+        height: 175vh;
+    }
+    #contactMes{
+        /* background: #000; */
+        row-gap: 2vh;
+        grid-template-columns: auto;
 } 
 }
