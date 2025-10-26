@@ -6,11 +6,15 @@
 }
 #contactMes{
     grid-template-columns: auto auto auto;
+    row-gap: 2vh;
+    margin-bottom: 2vh;
 }
-
+#hel{
+    height: 144vh;
+}
 @media screen and (max-width: 850px) {
     #hel{
-        height: 144vh;
+        height: 148vh;
     }
     #contactMes{
         /* background: #000; */
@@ -21,7 +25,7 @@
 }
 @media screen and (max-width: 560px) {
     #hel{
-        height: 175vh;
+        height: 245vh;
     }
     #contactMes{
         /* background: #000; */
