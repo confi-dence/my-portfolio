@@ -210,7 +210,7 @@ overflow: hidden;
   0 0 50px #fff,
   0 0 100px #fff;
   animation: tailwind 15s linear infinite;
-  animation-duration: calc(5000s /var(--i));
+  animation-duration: calc(3800s /var(--i));
   z-index: -1;
   /* animation-delay: 3s; */
 }
