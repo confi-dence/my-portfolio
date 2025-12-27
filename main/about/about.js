@@ -7,6 +7,7 @@ let minutes = now.getMinutes();
 let date = now.getFullYear()
 let ampm = 'PM'
 let Names = 'Mgbeojikwe Confidence'
+
 if(hours >= 12){
     ampm = 'PM'
 }else{
@@ -19,14 +20,11 @@ if(hours > 12){
     hours = hours
 }
 
-if(minutes >= 10){
-    minutes = minutes
-}else{
-    minutes = '0'+ minutes
-}
+// if(minutes >= 10){
+//     minutes = minutes
+// }else{
+//     minutes = '0'+ minutes
+// }
 
-time.innerText = `${Names}  \n year/time: ${date} ${hours}:${minutes} ${ampm}`;
+time.innerText = `${Names} @${date}`;
 // time.innerText = 'gdgdgdgd  \n  Hshshssh'
-
-
-
